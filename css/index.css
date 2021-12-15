@@ -1,0 +1,197 @@
+/* 
+=============
+Color Schemes
+=============
+Tech Black: #231f20
+Tech Gold: #b3a369
+Tech Blue: #003057
+
+White: #f7fcfe
+*/
+
+html, body {
+    height: 100%;
+}
+
+:root {
+    --navbar-height: 75px;
+    --color-primary: #1d1d24;
+    --color-primary-dark: #110f17;
+    --color-secondary: #b3a369;
+}
+
+body {
+    background-color: var(--color-primary-dark);
+    font-family: 'Roboto', sans-serif;
+    color: #f7fcfe;
+    font-size: 1rem;
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--color-primary-dark);
+    min-height: var(--navbar-height);
+}
+.navbar.scrolled {
+    background-color: var(--color-primary) !important;
+    transition: background-color 200ms linear;
+}
+.nav-link, .nav-item {
+    color: #f7fcfe;
+    /* font-family: 'IBM Plex Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.nav-item a.nav-link:hover {
+    color: var(--color-secondary); 
+}
+
+
+.active {
+    float: left;
+    border-bottom: 0.1rem solid #b3a369;
+    padding-bottom: 0.4rem;
+    /* color: #b3a369; */
+}
+.fa-bars {
+    color: #f7fcfe;
+}
+
+/* Profile Photo */
+.img-circle {
+    border-radius: 50%;
+    border: 2rem solid #030304; 
+    padding: 0.25rem; 
+    background: var(--color-secondary);
+}
+.img-small {
+    border: 1px solid var(--color-secondary); 
+    padding: 0.1rem; 
+    background:#ffffff;
+}
+
+/* Typography */
+.title {
+    /* font-size: 4rem; */
+    /* font-size: calc(16px + 0.5vw); */
+    font-size: calc(1.5rem + 2vw);
+    /* margin: .5em; */
+    font-weight: bolder;
+}
+.sub-title {
+    font-size: calc(0.8rem + 1vw);
+    color: #e8e8e8;
+}
+.sub-sub-title {
+    font-size: calc(0.75rem + 0.8vw);
+    color: #e8e8e8;
+}
+.text-content {
+    font-size: calc(0.7rem + 0.5vw);
+    color: #e8e8e8;
+}
+.skill-text {
+    font-size: calc(0.5rem + 0.4vw);
+    color: #e8e8e8;
+}
+.headings {
+    font-size: calc(1.2rem + 1.5vw);
+    color: #e8e8e8;
+    font-weight: bold;
+}
+.word-spacing {
+    word-spacing: 0.1rem;
+}
+
+/* Mobile Screen */
+@media screen and (max-width: 48em) {
+    .start-section {
+    margin-top: var(--navbar-height);
+    } 
+    .mobile-center {
+        text-align: center;
+    }
+    .div-show-desktop {
+        display: none;
+    }
+}
+/* Desktop */
+@media screen and (min-width: 48em) {
+    .body-main {
+        height: 100%;
+    }
+    .div-show-mobile {
+        display: none;
+    }
+}
+
+/*About Icons*/
+.fa-linkedin, .fa-github {
+    color: #ffffff;
+}
+.fa-envelope:hover, .fa-linkedin:hover, .fa-github:hover {
+    color: var(--color-secondary);
+}
+
+.converse-bubble {
+    border-color: var(--color-secondary);
+    border-style: solid;
+    border-radius: 1rem 1rem 1rem 0;
+    background-color: var(--color-secondary);
+    font-size: 0.9rem;
+}
+
+/* Download Button */
+.download-btn {
+    background-color: var(--color-secondary);
+    color: #f7fcfe;
+    border-radius: 1.2rem;
+}
+.download-btn:hover {
+    background-color: #f7fcfe;
+    color: var(--color-primary-dark);
+}
+.read-more-btn {
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+    background-color: var(--color-primary-dark);
+    border-radius: 1.2rem;
+}
+
+/* Box color */
+.bg-box {
+    /* background-color: var(--color-primary); */
+}
+.bg-secondary-custom {
+    color: #b3a369;
+}
+
+.nav-mg-top {
+    margin-top: var(--navbar-height);
+}
+
+/* Lottie Animation */
+.lottie-size {
+    width: 300px; 
+    height: 300px;
+}
+
+/* Skills */
+/* Word bordered */
+.wd-br {
+    border: 1px solid var(--color-secondary);
+    padding: 0.1rem 0.5rem;
+    margin: 1px;
+    font-size: calc(0.7rem + 0.25vw);
+    border-radius: 4px;
+    display: inline-block;
+    /* vertical-align: top; */
+}
+.fa-check-circle {
+    color: var(--color-secondary);
+}
+
+.bg-gold {
+    border-bottom: 1px solid #b3a369;
+}
